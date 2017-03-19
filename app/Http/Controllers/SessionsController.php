@@ -28,9 +28,9 @@ class SessionsController extends Controller
         'password' => $request->password,
       ];
 
-      if(Auth::attempt($credentials)){
+      if(Auth::attempt($credentials,$request->has('remember'))){
         session()->flash('success','Welcome to you');
-        return redirect()->route('users.show',[Auth::user()]);
+        return redirect()->intended(route('users.show',[Auth::user()]));
       }else {
         session()->flash('danger','您的账号可能输错啦！');
         return redirect()->back();
@@ -43,4 +43,13 @@ class SessionsController extends Controller
       session()->flash('success','欢迎再次登录');
       return redirect('/');
     }
+
+    public function __construct()
+    {
+      $this->middleware('guest',[
+        'only'=>['create']
+      ]);
+    }
+
+
 }
