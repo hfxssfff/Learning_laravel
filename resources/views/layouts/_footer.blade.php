@@ -1,9 +1,9 @@
 <div class="col-md-12">
   <footer class="footer">
     <small class="slogon">
-      <img class="brand-icon" src="https://dn-phphub.qbox.me/uploads/images/201612/12/1/iq7WQc2iuW.png?imageView2/1/w/34/h/34">
-      <a href="http://estgroupe.com/">
-        优帆远扬 | 创造不息，交付不止
+      <img class="brand-icon" src="image/Tetrad.png">
+      <a href="http://www.bilibili.com/">
+        TETRAD-四倍体-哲学家的天堂
       </a>
     </small>
     <nav>
