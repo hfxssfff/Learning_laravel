@@ -9,6 +9,13 @@ use App\Http\Controllers\Controller;
 
 class StaticPagesController extends Controller
 {
+  //Demo页面
+//    public function demo()
+//    {
+//      \View::addExtension('html', 'php');
+//      return view('static_pages/html5up-story/index-demo');
+//    }
+
     public function home()
     {
       return view('static_pages/home');
